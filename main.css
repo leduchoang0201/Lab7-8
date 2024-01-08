@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body{
+    background-color: #999;
+}
+    /* Header */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+}
+.header-left h1{
+    color: white;
+    line-height: 100px;
+    margin-left: 40px;
+    font-size: 35px;
+}
+.list,
+.sublist{
+    list-style: none;
+}
+.list{
+    display: flex;
+}
+.list-item{
+    margin-top: 35px;
+    margin-right: 20px;
+}
+.list-item li{ 
+    line-height: normal;
+}
+.list-item a{
+    text-decoration: none;
+    font-size:20px;
+    color: white;
+}
+.nav{
+    position: relative;
+}
+.nav ul {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.nav:hover ul {
+    width: 150px;
+    height: fit-content;
+    border: 1px solid black;
+    background-color: #999;
+    opacity: 1;
+    visibility: visible;
+}
+.nav li {
+    margin: 0;
+    line-height: 30px;
+}
+.nav a{
+}
+.nav li:hover{
+    background-color: #d9d9d9;
+}
+.nav li:hover a{
+    color: black;
+}
+.line{
+    border-right: 2px solid white;
+    margin-right: 20px; 
+    height: 20px;
+    margin-top: 40px;
+}
+.bton1 a{
+    background-color: rgb(41, 107, 107);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.bton2 a{
+    padding: 10px;
+    background-color: red;
+    border-radius: 20px;
+}
+.bton1 a:hover,
+.bton2 a:hover{
+    background-color: white;
+    color: black;
+}
+    /* Main */
+.background{
+    width: 80%;
+    margin: 0 auto;
+    height: 85vh;
+    overflow: hidden;
+}
+.list-image{
+    display: flex;
+    position: relative;
+}
+.list-image div{
+    width: 1000%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.list-image img{
+    display: block;
+    filter: brightness(50%);
+}
+.btn{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: #999;
+}
+.btn-left{
+    left: 2.5%;
+    border: 2px dotted white;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    text-align: center;
+}
+.btn-right{
+    right: 2.5%;
+    border: 2px dotted white;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    text-align: center;
+}
+.list-image h1{
+    width: max-content;
+
+    color: white;
+    position: absolute;
+    top: 20%;  
+}
+.list-image h2{
+    width: max-content;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top: 30%;  
+}
+.list-image span{
+    width: max-content;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top: 50%; 
+} 
+    /* Form */
+form {
+    max-width: 400px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.frame{
+    margin: 20px auto;
+    background-color: #d9d9d9;
+    width: 500px  ;
+    border-radius: 20px;
+    filter: blur(10%);
+
+}
+.frame h1{
+    padding-top: 20px;
+    text-align: center;
+}
+.frame h3{
+    margin: 20px 0;
+    text-align: center;
+}
+    /* Footer */
+.bot{
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+}
